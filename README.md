@@ -28,4 +28,10 @@ MySQL connections are established when the server is started. This is to prevent
 
 ## Architecture illustration
 
+Architecture:
 
+![architecture flowchart](images/architecture.png)
+
+Create request:
+
+![create flowchart](images/create.png)
