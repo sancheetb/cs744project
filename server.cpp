@@ -18,8 +18,8 @@
 #include "/home/sancheetb/decs_project/cpp-httplib-master/httplib.h"
 
 // server configuration
-#define DATABASE "test2"
-#define PASSWORD "Shata@1234"
+#define DATABASE "YOUR DATABASE"
+#define PASSWORD "YOUR PASSWORD"
 #define SERVER_THREADS 12
 #define POOL_SIZE 10
 
