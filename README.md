@@ -24,7 +24,7 @@ delete: curl -v -X DELETE "http://localhost:8080/delete?key=hello"
 Implemented using a doubly linked list to maintain a list of key value pairs and a hash map which contains keys and their corresponding node in linked list. This allows constant time insertion, deletion, update and read operations on LRU Cache.
 
 ## Connection Pool
-MySQL connections are established when the server is started. This is to prevent the server threads from repeatedly establishing a new connection on each HTTP request. SQL connection is handled using standard C++/SQL connector API <mysql/jbdc>. SQL connection pointers are stored in a pool of connections. The connection pool class handles SQL connection distribution among threads. The pool consists of a queue of connections and concurrency control variables to ensure mutual exclusion.
+MySQL connections are established when the server is started. This is to prevent the server threads from repeatedly establishing a new connection on each HTTP request. SQL connection is handled using standard C++/SQL connector API. SQL connection pointers are stored in a pool of connections. The connection pool class handles SQL connection distribution among threads. The pool consists of a queue of connections and concurrency control variables to ensure mutual exclusion.
 
 ## Architecture illustration
 
@@ -35,3 +35,8 @@ Architecture:
 Create request:
 
 ![create flowchart](images/create.png)
+
+## Dependencies
+C++ connectors: [link](https://dev.mysql.com/downloads/connector/cpp/?utm_source=chatgpt.com)
+
+HTTPlib.h: [link](https://github.com/yhirose/cpp-httplib)
