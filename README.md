@@ -13,8 +13,11 @@ It uses httplib library for handling HTTP requests. A variable number of server 
 example requests:
 
 read: curl -v "http://localhost:8080/read?key=sancheet"
+
 create: curl -v -X POST -d "key=hello&val=world" http://localhost:8080/create
+
 update: curl -v -X PUT -d "key=hello&val=byebye" http://localhost:8080/update
+
 delete: curl -v -X DELETE "http://localhost:8080/delete?key=hello"
 
 ## LRU Cache
