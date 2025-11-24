@@ -22,6 +22,7 @@
 #define PASSWORD "YOUR PASSWORD"
 #define SERVER_THREADS 12
 #define POOL_SIZE 10
+#define CACHE_SIZE 50
 
 class LRUCache {
    private:
@@ -86,7 +87,7 @@ class LRUCache {
 };
 
 // initializing cache
-LRUCache cache(5);
+LRUCache cache(CACHE_SIZE);
 
 class ConnectionPool {
    private:
